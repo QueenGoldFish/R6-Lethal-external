@@ -1,0 +1,65 @@
+follow these steps to get the app up and running.
+
+📥 1. Download
+
+Go to the Releases section of this GitHub repository.
+
+Download the latest release.
+
+Extract the .zip file somewhere convenient.
+
+🛡️ 2. Windows Security
+
+If Windows Security flags the application:
+
+⚠️ Don't disable your antivirus completely.
+
+Check Windows Security → Virus & threat protection → Protection history.
+
+Verify that you downloaded the application from the correct GitHub release.
+
+Only allow/run the file if you trust the source and have verified what you're downloading.
+
+▶️ 3. Launch the App
+
+Open the extracted folder.
+
+Run the application's .exe.
+
+Wait for the application to finish loading.
+
+🎮 4. Open the Menu
+
+Once the application is running:
+
+Press F12 to open the menu. 📋
+
+👁️ 5. Hide / Show the Menu
+
+Press Insert to hide the menu. 👻
+
+Press Insert again to show it.
+
+⌨️ Hotkeys
+Key Action
+F12 📋 Open menu
+Insert 👁️ Hide / show menu
+❓ Troubleshooting
+
+If the hotkeys aren't working:
+
+Make sure the application is running. ▶️
+
+Click the application window so it has focus. 🖱️
+
+Try pressing F12 or Insert again.
+
+Make sure another application isn't intercepting the keyboard shortcuts.
+
+✅ Done!
+
+You're all set! 🎉
+
+F12 → Open menu 📋
+Insert → Hide/show menu 👁️
+text GofusDev on discord for problems or fixes
