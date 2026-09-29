@@ -1,142 +1,500 @@
-🎯 R6 Cheats — Siege X Aim, ESP & Tactical Research Tool
-A lightweight Rainbow Six Siege X gameplay research toolkit focused on aim analysis, ESP-style visualization, tactical positioning, operator statistics, radar concepts, and match performance tracking.
+🎯 R6 Siege X Combat Lab
+A standalone Rainbow Six Siege X gameplay research and visualization toolkit for studying aim behavior, ESP-style interfaces, radar concepts, tactical positioning, and match performance.
 
-👁️ What Is This?
-R6 Siege X Combat Lab is a standalone gameplay analysis and visualization project designed for experimenting with concepts commonly discussed around R6 cheats, aimbot interfaces, ESP visualization, wallhack-style UI, and tactical analytics.
+R6 Siege X Combat Lab is an experimental gameplay-analysis project inspired by concepts commonly found in competitive FPS tooling, including aim assistance interfaces, smoothing models, target tracking, ESP-style visualization, radar systems, and tactical overlays.
 
-The project focuses on simulated or recorded gameplay information rather than modifying Rainbow Six Siege or bypassing its security systems.
+The project is designed for simulated, recorded, or manually collected gameplay data. It does not modify Rainbow Six Siege, inject code into the game, bypass anti-cheat systems, or provide functionality for cheating in live matches.
+
+The goal is to provide a controlled environment for researching how these systems work from a visualization, analytics, and human-performance perspective.
 
 ✨ Features
-🎯 Aim Analysis — Review accuracy, tracking, flicks, and crosshair placement
-👁️ ESP-Style Visualization — Experiment with simulated overlay interfaces
-📡 Radar Analysis — Study positioning and movement patterns
-🛡️ Operator Analytics — Compare performance across different operators
-🗺️ Tactical Intelligence — Review rotations, sites, and map control
-🔫 Weapon Analytics — Compare accuracy and weapon performance
-📊 Match Statistics — Analyze kills, assists, deaths, and round performance
-⚙️ Custom Menu UI — Configure visualization and analytics modules
-🚀 Getting Started
-Follow these simple steps to start the R6 Siege X research toolkit.
+🎯 Aim Analysis
+Analyze player aiming behavior using recorded or simulated engagement data.
 
-Requirements
-📥 Download the Application
-Windows 10/11 (64-bit)
-8 GB RAM or more
-Internet connection
-Rainbow Six Siege installed if you want to compare your own gameplay statistics
-👉 DOWNLOAD THE APPLICATION
-Click the download button above and wait until the package has completely downloaded.
-
-🛠️ Installation
-Step 1: Download
-Click DOWNLOAD NOW to obtain the latest available package.
-
-Step 2: Prepare the Files
-Open your Downloads folder
-Locate the downloaded package
-Extract the archive to a folder of your choice
-Review the included documentation
-Launch the analysis application
-Step 3: Configure
-Choose the research modules you want to explore:
-
-Aim statistics
-ESP-style visualization
-Radar analysis
-Operator analytics
-Tactical analysis
-Weapon statistics
-Match performance
-🎯 R6 Aim Analysis
-Analyze important aiming metrics including:
+Metrics include:
 
 Crosshair placement
+
 Flick accuracy
+
+Target acquisition time
+
 Target tracking
-Reaction timing
+
+Reaction time
+
 Headshot percentage
+
 Weapon accuracy
+
 Engagement distance
+
 Hit distribution
-The aim module focuses on reviewing gameplay performance rather than automatically targeting opponents during live matches.
 
-👁️ ESP Visualization
-Experiment with ESP-style interface concepts using simulated or recorded gameplay information.
+Overshoot and correction behavior
 
-Visualization Options
+Time-on-target
+
+Aim consistency
+
+🤖 Aim-Assistance Research
+The project can simulate common concepts associated with aim-assistance interfaces without applying them to a live game.
+
+Research parameters can include:
+
+Target acquisition
+
+Aim smoothing
+
+Tracking interpolation
+
+Flick transition curves
+
+Target-selection logic
+
+Field-of-view visualization
+
+Target priority visualization
+
+Reaction-delay simulation
+
+Maximum adjustment limits
+
+Crosshair-to-target distance
+
+Humanized movement models
+
+Aim Smoothing
+Aim smoothing describes how quickly an aiming system transitions from one position toward another.
+
+For example:
+
+Low smoothing
+Crosshair ───────────────► Target
+          very fast movement
+
+Medium smoothing
+Crosshair ────────╮
+                  ╰──────► Target
+
+High smoothing
+Crosshair ───╮
+             ╰──────╮
+                    ╰────► Target
+
+The research interface can visualize different smoothing curves and compare them against recorded human aiming behavior.
+
+The purpose is to study movement characteristics and visualization, rather than automatically controlling a live game.
+
+👁️ ESP-Style Visualization
+Experiment with interfaces inspired by ESP and tactical visualization systems using simulated or recorded player data.
+
+Available visualization concepts include:
+
 Player markers
-Bounding-box UI
+
+Bounding boxes
+
 Distance indicators
+
 Direction indicators
+
 Operator labels
-Team visualization
-Map positions
+
+Team identification
+
+Health/status indicators
+
 Objective markers
-📡 R6 Radar Analysis
-Explore radar-style visualization concepts through a standalone research interface.
 
-Analyze:
+Line-of-sight visualization
 
-Player positioning
-Movement paths
-Site rotations
-Entry routes
-Engagement locations
+Player trajectories
+
+Historical movement paths
+
+Example conceptual data:
+
+Player
+ ├── Position: X / Y / Z
+ ├── Team: Defender
+ ├── Operator: Smoke
+ ├── Distance: 18.4m
+ ├── Direction: 274°
+ └── Status: Alive
+
+The visualization layer operates independently from the game client.
+
+📡 Radar & Positioning Research
+Study how player-position information can be represented on a radar-style interface.
+
+Radar Modules
+Player locations
+
 Team positioning
+
+Movement direction
+
+Movement speed
+
+Rotation paths
+
+Entry routes
+
+Site locations
+
+Engagement locations
+
+Historical player positions
+
+Map-control visualization
+
+Movement Analysis
+Recorded positions can be converted into movement trails:
+
+Spawn
+  │
+  ▼
+Entry ────────► Hallway
+                  │
+                  ▼
+              Objective
+                  │
+                  ▼
+              Engagement
+
+This makes it possible to investigate common movement patterns and rotation behavior.
+
+🧠 Tactical Intelligence
+Analyze how players move around the map and how engagements develop throughout a round.
+
+Research areas include:
+
+Attacker entry paths
+
+Defender positioning
+
+Site rotations
+
+Reinforcement areas
+
+Common engagement locations
+
+Objective pressure
+
+Team spacing
+
 Map control
+
+Rotation timing
+
+Flanking routes
+
+Post-plant positioning
+
+The tactical module can reconstruct a round from recorded positional data and display movement chronologically.
+
 🛡️ Operator Analytics
-Compare gameplay performance across Rainbow Six Siege operators.
+Compare performance across operators using collected match statistics.
 
 Track:
 
-Operator usage
-K/D statistics
-Win rate
+Metric	Description
+Operator Usage	Number of rounds played
+K/D	Kills compared with deaths
+Win Rate	Recorded round/match results
+Headshot %	Percentage of kills that were headshots
+Weapon Accuracy	Shots hitting their intended target
+Survival Rate	Rounds survived
+Objective Performance	Objective-related actions
+Average Engagements	Engagements per round
+
+Operator data can also be filtered by:
+
+Map
+
+Side
+
+Weapon
+
+Round
+
+Match
+
+Player
+
+Site
+
+🔫 Weapon Analytics
+Study weapon performance using recorded gameplay information.
+
+Possible metrics:
+
+Shots fired
+
+Shots hit
+
+Accuracy
+
 Headshot percentage
-Weapon performance
-Round survival
-Objective performance
-🗺️ Tactical Analysis
-Study tactical gameplay and round positioning.
 
-Review:
+Average engagement distance
 
-Attacker entry paths
-Defender positioning
-Site rotations
-Map control
-Objective pressure
+Hit distribution
+
+Time-to-first-shot
+
+Time-on-target
+
+Recoil behavior
+
+Kill distance
+
+Engagement frequency
+
+Accuracy Breakdown
+Total Shots       1,240
+Hits                487
+Accuracy          39.27%
+
+Headshots          142
+Headshot Rate     29.16%
+
+Average Distance   17.8m
+
+🎯 Crosshair & Tracking Research
+The aim-analysis module can reconstruct crosshair movement over time.
+
+This allows research into:
+
+Micro-adjustments
+
+Tracking stability
+
+Flick distance
+
+Flick duration
+
+Overshooting
+
+Undershooting
+
+Target switching
+
+Crosshair placement
+
+Recoil compensation
+
+Reaction timing
+
+A tracking graph can represent:
+
+Crosshair Position
+        │
+        │          ╭────── Target
+        │      ╭───╯
+        │   ╭──╯
+        │───╯
+        └──────────────────── Time
+
+This provides a way to compare different aiming behaviors without requiring live-game interaction.
+
+🤖 Aim Smoothing Simulator
+The optional aim-simulation module demonstrates how different transition models affect movement.
+
+Parameters
+Smoothing strength
+
+Transition duration
+
+Maximum adjustment
+
+Target distance
+
+Starting crosshair position
+
+Target position
+
+Reaction delay
+
+Tracking error
+
+Movement curve
+
+Example Profiles
+Instant
+
+Target acquisition
+████████████████████ 100%
+
+Low smoothing
+
+█████████████████─── 85%
+
+Medium smoothing
+
+██████████████────── 70%
+
+High smoothing
+
+██████████────────── 50%
+
+These profiles are intended for visual experimentation and human-aim comparison.
+
+👁️ Field-of-View Visualization
+A configurable FOV visualization can show the relationship between a simulated player view and nearby targets.
+
+Example:
+
+             Target
+               ●
+              /
+             /
+       ╲     │     ╱
+        ╲    │    ╱
+         ╲   │   ╱
+          ╲  │  ╱
+           ╲ │ ╱
+            ╲│╱
+             ▲
+          Crosshair
+
+Useful research variables include:
+
+FOV radius
+
+Target distance
+
+Angular distance
+
+Number of targets
+
+Target priority
+
+Acquisition time
+
+🗺️ Map Analysis
+The map module provides a top-down representation of recorded gameplay.
+
+Visualize:
+
+Player positions
+
+Objective locations
+
+Entry points
+
+Rotation paths
+
 Engagement locations
-Team movement
-⚙️ R6 Cheat Menu
-A menu-inspired interface provides quick access to the project's research modules.
 
-Visuals
-ESP simulation
-Player markers
-Distance visualization
-Radar interface
-Aim
-Accuracy analysis
-Tracking statistics
-Flick analysis
-Reaction-time metrics
-Tactical
-Operator statistics
-Map analysis
-Rotation analysis
-Match performance
-Settings
-Interface configuration
-Visualization preferences
-Data options
-Logging settings
-🖥️ System Requirements
-Recommended minimum configuration:
+Death locations
 
-Operating System: Windows 10 / Windows 11 64-bit
-Processor: Intel Core i5 / AMD equivalent or better
-Memory: 8 GB RAM minimum
-Storage: 100 MB available space for the toolkit
-Graphics: DirectX compatible GPU
-Internet: Required for downloads and updates give me a small description for this
+Team distribution
+
+Movement density
+
+Areas of control
+
+Heatmap Example
+┌──────────────────────────┐
+│ ░░░░▒▒▒▒▓▓░░░░           │
+│ ░░▒▒▓▓██▓▓▒▒░░           │
+│ ░▒▓████████▓▒░           │
+│ ░▒▓████████▓▒░           │
+│ ░░▒▒▓▓██▓▓▒▒░░           │
+│ ░░░░▒▒▒▒▓▓░░░░           │
+└──────────────────────────┘
+
+░ Low activity
+▒ Moderate activity
+▓ High activity
+█ Very high activity
+
+📊 Match Performance
+Track performance at the round and match level.
+
+Round Statistics
+Kills
+
+Assists
+
+Deaths
+
+Headshots
+
+Damage
+
+Survival
+
+Objective actions
+
+First engagements
+
+Trade engagements
+
+Round result
+
+Match Statistics
+Matches        24
+Rounds         213
+Kills          318
+Deaths         241
+Assists        104
+Headshots      137
+Accuracy       41.8%
+
+⚙️ Research Interface
+The project uses a modular menu-inspired interface for switching between analytical components.
+
+Modules
+R6 COMBAT LAB
+│
+├── 🎯 Aim Analysis
+│   ├── Accuracy
+│   ├── Flicks
+│   ├── Tracking
+│   ├── Reaction Time
+│   └── Crosshair Placement
+│
+├── 👁️ Visualization
+│   ├── Player Markers
+│   ├── Bounding Boxes
+│   ├── Distance
+│   └── Operator Labels
+│
+├── 📡 Radar
+│   ├── Positioning
+│   ├── Movement
+│   └── Rotation Paths
+│
+├── 🛡️ Operators
+│   ├── Performance
+│   ├── Usage
+│   └── Weapon Statistics
+│
+├── 🗺️ Tactical Analysis
+│   ├── Map Control
+│   ├── Entries
+│   └── Rotations
+│
+└── 📊 Match Data
+    ├── Rounds
+    ├── K/D
+    └── Performance
+
+🚀 Getting Started
+Requirements
+Windows 10/11 64-bit
+
+8 GB RAM or more
+
+DirectX-compatible GPU
+
+Approximately 100 MB storage
+
+Internet connection for downloading the project
+
+Rainbow Six Siege is not required for simulated datasets
+
+Rainbow Six Siege may be used separately when comparing your own legally collected gameplay statistics or recordings.
